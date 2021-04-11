@@ -1,2 +1,1 @@
-# frontier-chain-testnets
-Frontier Chain Testnets
+# Frontier Chain Testnets
