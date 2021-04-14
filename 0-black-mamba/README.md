@@ -8,7 +8,7 @@ Please put gentxs in the `gentxs` folder within this directory.
 ## TLDR to submit a gentx:
 
 ```
-chain-id: frontchain-testnet-1
+chain-id: frontier-chain-testnet-0-black-mamba
 gentx-amount: 1000000000000front
 front version: v0.1.0
 genesis-time: 2021-04-14T15:00:00Z
@@ -25,7 +25,7 @@ git clone git@github.com:frontierdotxyz/frontier.git
 cd frontier && git checkout v0.1.0 && make install
 
 # initialize chain
-frontd init my_node --chain-id frontchain-testnet-1
+frontd init my_node --chain-id frontier-chain-testnet-0-black-mamba
 
 # Add validator key
 frontcli config keyring-backend test
