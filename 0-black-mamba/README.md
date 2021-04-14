@@ -39,7 +39,7 @@ frontd gentx --name validator --amount 1000000000000front --keyring-backend test
 ## Genesis Details
 
 ```
-genesis hash: PLACEHOLDER
+genesis hash: 01b86a2e401ea1519644bff059c7a937496003fb7a61554d3dff7ecfcfdfa7e1
 seeds: PLACEHOLDER
-persistent peers: PLACEHOLDER
+persistent peers: a6b554f55b619ec07e8ecbb0abc36cce39dcea39@34.239.152.196:26656
 ```
