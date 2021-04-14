@@ -1,6 +1,6 @@
 {
   "genesis_time": "2021-04-14T13:11:51.761362Z",
-  "chain_id": "frontchain-testnet-1",
+  "chain_id": "frontier-chain-testnet-0-black-mamba",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
