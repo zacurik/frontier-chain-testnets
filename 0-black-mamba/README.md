@@ -16,7 +16,7 @@ genesis-time: 2021-04-14T15:00:00Z
 
 ## Instructions to install Frontier Chain and submit a gentx:
 
-__Note__: Requires golang 1.15+
+__Note__: Requires golang 1.15+ (https://golang.org/doc/install)
 
 ```
 # clone the frontier chain repo
