@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2021-04-14T12:27:41.430454Z",
-  "chain_id": "frontierchain1",
+  "genesis_time": "2021-04-14T13:11:51.761362Z",
+  "chain_id": "frontchain-testnet-1",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
@@ -19,6 +19,36 @@
   },
   "app_hash": "",
   "app_state": {
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "front",
+            "amount": "10000000"
+          }
+        ],
+        "max_deposit_period": "172800000000000"
+      },
+      "voting_params": {
+        "voting_period": "172800000000000"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto": "0.334000000000000000"
+      }
+    },
+    "params": null,
+    "evidence": {
+      "params": {
+        "max_evidence_age": "120000000000"
+      },
+      "evidence": []
+    },
     "slashing": {
       "params": {
         "signed_blocks_window": "100",
@@ -29,62 +59,6 @@
       },
       "signing_infos": {},
       "missed_blocks": {}
-    },
-    "crisis": {
-      "constant_fee": {
-        "denom": "front",
-        "amount": "1000"
-      }
-    },
-    "genutil": {
-      "gentxs": [
-        {
-          "type": "cosmos-sdk/StdTx",
-          "value": {
-            "msg": [
-              {
-                "type": "cosmos-sdk/MsgCreateValidator",
-                "value": {
-                  "description": {
-                    "moniker": "mynode",
-                    "identity": "",
-                    "website": "",
-                    "security_contact": "",
-                    "details": ""
-                  },
-                  "commission": {
-                    "rate": "0.100000000000000000",
-                    "max_rate": "0.200000000000000000",
-                    "max_change_rate": "0.010000000000000000"
-                  },
-                  "min_self_delegation": "1",
-                  "delegator_address": "front1445p9l3e0ctv989cke3al0k0xfqaeynncphrdd",
-                  "validator_address": "frontvaloper1445p9l3e0ctv989cke3al0k0xfqaeynnvw9dya",
-                  "pubkey": "frontvalconspub1zcjduepqg0hylyyxfues97nwhj8lwq6jf9nszusm443z0f57g3yfkm4xpmqsvggkt7",
-                  "value": {
-                    "denom": "front",
-                    "amount": "10000000"
-                  }
-                }
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas": "200000"
-            },
-            "signatures": [
-              {
-                "pub_key": {
-                  "type": "tendermint/PubKeySecp256k1",
-                  "value": "Au9H6UKJwCs+sowZhMy9qNZJq8nHzRfsI6v/sceSH9zt"
-                },
-                "signature": "lhkjkv/pHh4XyT8ZqiB989kQ2MaZ+dj5Z7BYdwwKS6cGXB4joMOX6qjt4Scgjtkh5CvUy36AlXpLfkA94aIItg=="
-              }
-            ],
-            "memo": "2f0f4adb24be4966e1fe50deb116ecf5c33765a7@192.168.1.12:26656"
-          }
-        }
-      ]
     },
     "mint": {
       "minter": {
@@ -119,17 +93,64 @@
       "delegator_starting_infos": [],
       "validator_slash_events": []
     },
-    "evidence": {
-      "params": {
-        "max_evidence_age": "120000000000"
-      },
-      "evidence": []
-    },
-    "bank": {
-      "send_enabled": true
-    },
     "supply": {
       "supply": []
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "front",
+        "amount": "1000"
+      }
+    },
+    "genutil": {
+      "gentxs": [
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "mynode",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "front1qx3ww2stangh3ny3z9nxzw7q6q70qf83nnrjtx",
+                  "validator_address": "frontvaloper1qx3ww2stangh3ny3z9nxzw7q6q70qf838u3uzk",
+                  "pubkey": "frontvalconspub1zcjduepq6jwg3mckfx04wqrn9jevatthh9arvd48q68crzx8tpcx9zc5eqeqc26583",
+                  "value": {
+                    "denom": "front",
+                    "amount": "10000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A9hkk4XOydoFBRgIvUYZVWNN6N5qOLWvpDMQXrKW26iq"
+                },
+                "signature": "E+DrRoDAFNEKaCX8pvpVUv9p+/XA5KC06Hczj0tqj8lF6O/ooqtIyWjQmfO4wExUn9FxtjdXw3v5ZEuNePlq6Q=="
+              }
+            ],
+            "memo": "695a290405b466d0f7d506e0f65d3266091a1458@192.168.1.12:26656"
+          }
+        }
+      ]
     },
     "staking": {
       "params": {
@@ -159,7 +180,7 @@
         {
           "type": "cosmos-sdk/Account",
           "value": {
-            "address": "front1445p9l3e0ctv989cke3al0k0xfqaeynncphrdd",
+            "address": "front1qx3ww2stangh3ny3z9nxzw7q6q70qf83nnrjtx",
             "coins": [
               {
                 "denom": "front",
@@ -174,7 +195,7 @@
         {
           "type": "cosmos-sdk/Account",
           "value": {
-            "address": "front166xcdxs58ghjg245rves2dhcnwngh5jsnt8xgu",
+            "address": "front1lqvnueehpagkt0eyvd54t4nq0a8n05wlcglvw2",
             "coins": [
               {
                 "denom": "front",
@@ -188,29 +209,8 @@
         }
       ]
     },
-    "gov": {
-      "starting_proposal_id": "1",
-      "deposits": null,
-      "votes": null,
-      "proposals": null,
-      "deposit_params": {
-        "min_deposit": [
-          {
-            "denom": "front",
-            "amount": "10000000"
-          }
-        ],
-        "max_deposit_period": "172800000000000"
-      },
-      "voting_params": {
-        "voting_period": "172800000000000"
-      },
-      "tally_params": {
-        "quorum": "0.334000000000000000",
-        "threshold": "0.500000000000000000",
-        "veto": "0.334000000000000000"
-      }
-    },
-    "params": null
+    "bank": {
+      "send_enabled": true
+    }
   }
 }
